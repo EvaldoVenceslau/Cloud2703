@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     const botao = document.getElementById("buscar");
     botao.addEventListener("click", buscarDigimon);
+
+    // Adiciona o evento de pressionar Enter no campo de input
+    const input = document.getElementById("digimonName");
+    input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            buscarDigimon();
+        }
+    });
 });
 
 function buscarDigimon() {
