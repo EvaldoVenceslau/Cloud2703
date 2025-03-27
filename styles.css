@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    background: url('digimundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #ff9800;
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff9800;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    padding: 12px;
+    width: 250px;
+    font-size: 18px;
+    border: 3px solid #ff9800;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e68900;
+    transform: scale(1.1);
+}
+
+#resultado {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 152, 0, 0.8);
+}
+
+#resultado h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+#resultado img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#resultado img:hover {
+    transform: scale(1.1);
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
